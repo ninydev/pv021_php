@@ -1,4 +1,4 @@
-<html>
+<html lang="ru">
     <title> php + html </title>
 
 
