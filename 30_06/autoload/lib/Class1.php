@@ -7,3 +7,7 @@ class Class1
         return __CLASS__ . " Work \n";
     }
 }
+
+class SomeClass{
+
+}
