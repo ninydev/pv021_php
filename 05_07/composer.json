@@ -1,0 +1,21 @@
+{
+    "name": "keepe/05_07",
+    "description": "des",
+    "type": "lession",
+    "license": "BeerWare",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Niny\\": "lib/Niny/",
+            "Pv021\\": "lib/Pv021/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oleksandr Nykytin",
+            "email": "keeper@ninydev.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}

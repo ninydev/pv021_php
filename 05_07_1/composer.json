@@ -1,0 +1,19 @@
+{
+    "name": "ninydev/mywork",
+    "description": "Мой первый проект на php",
+    "type": "library",
+    "license": "BeerWare",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Oleksandr Nykytin",
+            "email": "keeper@ninydev.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
+}
