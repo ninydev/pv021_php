@@ -10,7 +10,7 @@ class Render
      * Задача этого метода - подключить шаблон из нужной папки
      * @param $data
      */
-    static public function view(string $pageName, array $data = []): void
+    static public function view(string $pageName, array $varBug = []): void
     {
         // Путь к моим шаблонам для вывода пользователю
         $layoutDir = __DIR__ . "/../../resources/views/layouts/" . App::$layoutDir;
