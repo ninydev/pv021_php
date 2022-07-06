@@ -2,13 +2,16 @@
 
 namespace App\Controllers;
 
+use App\Views\Render;
+
 class HomeController
 {
     /**
      * Построить главную страницу сайта
      */
     public function index(){
-        echo "Work";
+        Render::view('home', []);
+        //echo "Work";
     }
 
 }

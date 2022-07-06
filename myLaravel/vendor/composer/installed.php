@@ -3,7 +3,7 @@
         'name' => 'ninydev/mylaravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => '1f0d5894747a3607b880d69001dae986a0316c08',
+        'reference' => 'a9b281964a034d9b2d81830c7b0d9d4e59ac3427',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'ninydev/mylaravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => '1f0d5894747a3607b880d69001dae986a0316c08',
+            'reference' => 'a9b281964a034d9b2d81830c7b0d9d4e59ac3427',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
