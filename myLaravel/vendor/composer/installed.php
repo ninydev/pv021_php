@@ -3,7 +3,7 @@
         'name' => 'ninydev/mylaravel',
         'pretty_version' => 'dev-main',
         'version' => 'dev-main',
-        'reference' => 'a9b281964a034d9b2d81830c7b0d9d4e59ac3427',
+        'reference' => '087d04a58e347de19efc843f4731993bb83e0650',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -13,7 +13,7 @@
         'ninydev/mylaravel' => array(
             'pretty_version' => 'dev-main',
             'version' => 'dev-main',
-            'reference' => 'a9b281964a034d9b2d81830c7b0d9d4e59ac3427',
+            'reference' => '087d04a58e347de19efc843f4731993bb83e0650',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
@@ -22,7 +22,7 @@
         'phpmailer/phpmailer' => array(
             'pretty_version' => 'dev-master',
             'version' => 'dev-master',
-            'reference' => '375d77cef7c96fded38a21c90becef6f8c2a96ca',
+            'reference' => '34cafe9fc955552f0e6af154fcad201d910e2f71',
             'type' => 'library',
             'install_path' => __DIR__ . '/../phpmailer/phpmailer',
             'aliases' => array(
