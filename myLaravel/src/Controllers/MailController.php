@@ -2,7 +2,10 @@
 
 namespace App\Controllers;
 
+use App\Helpers\Mail\To as Sender;
 use App\Views\Render;
+use Config\App;
+
 
 class MailController
 {
@@ -57,8 +60,8 @@ class MailController
     {
         $varBug['err'] = $this->validator();
 
-        var_dump($_POST);
-        var_dump($varBug['err']);
+        // var_dump($_POST);
+        // var_dump($varBug['err']);
 
         /**
          * Если есть ошибки - вывести форму снова
@@ -70,7 +73,18 @@ class MailController
 
         // Отсылка формы и вывод результатов
 
-        // var_dump($_POST);
+        $res = Sender::send(
+            $_POST['email'], $_POST['name'], $_POST['message']);
+
+        echo "<h1>Рузультаты отправки</h1>";
+        echo "<pre>";
+        print_r($res);
+        echo "</pre>";
+
+        $body = $_POST['email'] . "\n" . $_POST['name'] . $_POST['message'];
+
+        $res = Sender::send(
+            App::$adminEmail, "From Form", $_POST['message']);
 
     }
 

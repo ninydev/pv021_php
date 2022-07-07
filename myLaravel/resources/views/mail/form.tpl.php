@@ -26,11 +26,11 @@
         </div>
      <div class="col-auto">
          <label for="phone" class="visually-hidden">Phone</label>
-         <input type="text" name="Phone" class="form-control" id="phone" placeholder="Phone">
+         <input type="text" name="phone" class="form-control" id="phone" placeholder="Phone">
      </div>
      <div class="col-auto">
          <label for="message" class="visually-hidden">Message</label>
-         <textarea name="Message" class="form-control" id="message">
+         <textarea name="message" class="form-control" id="message">
          </textarea>
      </div>
         <div class="col-auto">
