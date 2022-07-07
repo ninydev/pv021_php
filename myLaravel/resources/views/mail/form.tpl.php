@@ -5,6 +5,7 @@
      <?php
      \App\Views\Forms\Input::input(
              "Email", "text", "email",
+             ["placeholder" => "Введите почту"],
              isset($varBug['email'])? $varBug['email']: null,
              isset($varBug['err']['email'])? $varBug['err']['email']: null);
      ?>
