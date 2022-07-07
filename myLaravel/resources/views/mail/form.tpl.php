@@ -3,7 +3,7 @@
           method="post">
 
      <?php
-     \App\Views\Forms\Input::input(
+     \App\Views\Forms\Input::render(
              "Email", "text", "email",
              ["placeholder" => "Введите почту"],
          $varBug['formData']['email'] ?? null,

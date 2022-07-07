@@ -15,7 +15,7 @@ class Input
      * @param $err - список ошибок
      * @return void
      */
-    static public function input($label, $type, $name, $attr, $val, $err)
+    static public function render($label, $type, $name, $attr, $val, $err)
     {
 ?>
 
