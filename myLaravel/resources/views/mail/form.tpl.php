@@ -6,13 +6,13 @@
      \App\Views\Forms\Input::input(
              "Email", "text", "email",
              ["placeholder" => "Введите почту"],
-             isset($varBug['email'])? $varBug['email']: null,
-             isset($varBug['err']['email'])? $varBug['err']['email']: null);
+         $varBug['formData']['email'] ?? null,
+         $varBug['err']['email'] ?? null);
      ?>
 
         <div class="col-auto">
             <label for="name" class="visually-hidden">Name</label>
-            <input type="text" name="Name" class="form-control" id="name" placeholder="Name">
+            <input type="text" name="name" class="form-control" id="name" placeholder="Name">
             <?php
             if (isset($varBug['err']['name'])){
                 echo '<div  class="alert alert-danger" role="alert">';

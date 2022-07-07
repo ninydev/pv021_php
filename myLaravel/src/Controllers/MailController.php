@@ -57,6 +57,7 @@ class MailController
     {
         $varBug['err'] = $this->validator();
 
+        var_dump($_POST);
         var_dump($varBug['err']);
 
         /**
