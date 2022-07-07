@@ -4,11 +4,34 @@
         <div class="col-auto">
             <label for="email" class="visually-hidden">Email</label>
             <input type="text" name="Email" class="form-control" id="email"
-                   value="email@example.com">
+                   value="<?php
+                   if (isset($varBug['formData']['Email']))
+                       echo $varBug['formData']['Email'];
+                   ?>">
+            <?php
+            if (isset($varBug['err']['email'])){
+                echo '<div  class="alert alert-danger" role="alert">';
+
+                foreach ($varBug['err']['email'] as $key => $value ) {
+                    echo "<p> $key => $value </p>";
+                }
+                echo "</div>";
+            }
+            ?>
         </div>
         <div class="col-auto">
             <label for="name" class="visually-hidden">Name</label>
             <input type="text" name="Name" class="form-control" id="name" placeholder="Name">
+            <?php
+            if (isset($varBug['err']['name'])){
+                echo '<div  class="alert alert-danger" role="alert">';
+
+                foreach ($varBug['err']['name'] as $key => $value ) {
+                    echo "<p> $key => $value </p>";
+                }
+                echo "</div>";
+            }
+            ?>
         </div>
      <div class="col-auto">
          <label for="phone" class="visually-hidden">Phone</label>
