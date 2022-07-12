@@ -15,6 +15,8 @@ class App
     static public string $headTitle = 'Сайт ПВ021';
     static public string $headerTitle = 'Сайт ПВ021';
 
-    static public string $adminEmail = "keeper@ninydev.com";
+    static public string $adminEmail = "phenix.ods@gmail.com";
+    // static public string $adminEmail = "keeper@ninydev.com";
+    // static public string $adminEmail = "nika_web@ukr.net";
 
 }
