@@ -13,6 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+Route::get('/about', function () {
+    return view('pages.about',
+        [
+        'varName' => 'varValue', // Передача данных осуществляется через массив
+            'records' => [1,2,3],
+            'forCase' => 1
+        ]
+    );
+});
+
 Route::get('/', function () {
     return view('welcome');
 });
+
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
