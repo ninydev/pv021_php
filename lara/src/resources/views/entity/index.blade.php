@@ -18,6 +18,7 @@
         <form action="{{route('entity.store')}}" method="POST">
             @csrf
             <input type="text" name="name"><br>
+            <input type="text" name="url"><br>
             <textarea name="description">
 
             </textarea><br>
