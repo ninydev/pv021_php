@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\EntityController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,5 +33,10 @@ Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
     ->name('home');
 
-Route::get('/entity', [App\Http\Controllers\EntityController::class, 'readAll'])
+Route::get('/entity', [EntityController::class, 'index'])
     ->name('entity.read.all');
+
+Route::post('/entity', [EntityController::class, 'store'])
+    ->name('entity.store');
+
+
