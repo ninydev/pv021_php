@@ -29,4 +29,8 @@ Route::get('/', function () {
 
 Auth::routes();
 
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])
+    ->name('home');
+
+Route::get('/entity', [App\Http\Controllers\EntityController::class, 'readAll'])
+    ->name('entity.read.all');
