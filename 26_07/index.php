@@ -1,7 +1,7 @@
 <?php
 class Category {
-    public $name = "";
-    public $productList = [];
+    public string $name = "";
+    public array $productList = [];
 }
 
 // Массив категорий
