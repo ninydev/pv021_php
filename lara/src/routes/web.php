@@ -14,6 +14,11 @@ use App\Http\Controllers\EntityController;
 |
 */
 
+Route::get('/rel/one-to-one',
+    [App\Http\Controllers\RelController::class, 'oneToOne']
+);
+
+
 Route::get('/about', function () {
     return view('pages.about',
         [
@@ -40,3 +45,8 @@ Route::post('/entity', [EntityController::class, 'store'])
     ->name('entity.store');
 
 
+
+
+Route::group(['prefix' => 'admin'], function () {
+    Voyager::routes();
+});
