@@ -18,6 +18,13 @@ Route::get('/rel/one-to-one',
     [App\Http\Controllers\RelController::class, 'oneToOne']
 );
 
+Route::get('/rel/one-to-many',
+    [App\Http\Controllers\RelController::class, 'oneToMany']
+);
+
+Route::get('/rel/many-to-many',
+    [App\Http\Controllers\RelController::class, 'manyToMany']
+);
 
 Route::get('/about', function () {
     return view('pages.about',
