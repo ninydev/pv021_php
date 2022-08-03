@@ -20,6 +20,9 @@ use App\Http\Controllers\AuthController;
 //});
 
 
+Route::post('/file', [\App\Http\Controllers\UploadFileController::class, 'showUploadFile']);
+
+
 Route::group([
     'middleware' => 'api',
     'prefix' => 'auth'

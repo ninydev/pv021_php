@@ -5,28 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="495a7fc1-291e-4680-8d9f-4face7d8f5c3" name="Changes" comment="Router">
-      <change afterPath="$PROJECT_DIR$/src/package-lock.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/css/app.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/js/Error404.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/js/Home.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/js/app.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/public/mix-manifest.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/components/Welcome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/pages/PageAbout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/pages/PageContact.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/pages/PageError404.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/pages/PageHome.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/router/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/webpack.mix.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/yarn.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/UploadFileController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/resources/js/components/forms/FormFile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/src/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/css/app.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/views/welcome.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/views/welcome.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/public/js/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/Home.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/pages/PageHome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/pages/PageHome.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -211,7 +195,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659455985845</updated>
       <workItem from="1659455987145" duration="6999000" />
-      <workItem from="1659542066800" duration="2444000" />
+      <workItem from="1659542066800" duration="4436000" />
     </task>
     <task id="LOCAL-00001" summary="JWT Token">
       <created>1659458053699</created>
@@ -220,7 +204,21 @@
       <option name="project" value="LOCAL" />
       <updated>1659458053699</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Router">
+      <created>1659544835528</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1659544835528</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Router">
+      <created>1659544847464</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1659544847464</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
