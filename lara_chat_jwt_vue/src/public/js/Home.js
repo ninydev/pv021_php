@@ -15,19 +15,22 @@ __webpack_require__.r(__webpack_exports__);
   setup: function setup() {
     return {
       send: function send() {
-        var data = new FormData(document.forms.fileSend);
+        var data = new FormData();
+        var imageFile = document.getElementById('imageFile');
+        var input = document.querySelector('input[type="file"]');
+        data.append("image", input.files[0]);
         console.log('Send');
         console.log(data);
         fetch('/api/file', {
           method: 'POST',
-          headers: {
-            // 'Content-Type': 'application/json'
-            'Content-Type': 'application/x-www-form-urlencoded'
+          headers: {// 'Content-Type': 'application/json'
+            // 'Content-Type': 'application/x-www-form-urlencoded',
+            // 'Content-Type': 'multipart/form-data',
           },
           body: data
         }).then(function (res) {
           console.log(res);
-          return res.text();
+          return res.json();
         }).then(function (txt) {
           console.log(txt);
         })["catch"](function (err) {
@@ -80,7 +83,8 @@ var _hoisted_1 = {
 
 var _hoisted_2 = /*#__PURE__*/(0,vue__WEBPACK_IMPORTED_MODULE_0__.createElementVNode)("input", {
   type: "file",
-  name: "image"
+  name: "image",
+  id: "imageFile"
 }, null, -1
 /* HOISTED */
 );

@@ -5,12 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="495a7fc1-291e-4680-8d9f-4face7d8f5c3" name="Changes" comment="Router">
-      <change afterPath="$PROJECT_DIR$/src/app/Http/Controllers/UploadFileController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/components/forms/FormFile.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/Http/Controllers/UploadFileController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/Http/Controllers/UploadFileController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/js/Home.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/Home.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/js/pages/PageHome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/pages/PageHome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/components/forms/FormFile.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/components/forms/FormFile.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -195,7 +193,7 @@
       <option name="presentableId" value="Default" />
       <updated>1659455985845</updated>
       <workItem from="1659455987145" duration="6999000" />
-      <workItem from="1659542066800" duration="4436000" />
+      <workItem from="1659542066800" duration="5707000" />
     </task>
     <task id="LOCAL-00001" summary="JWT Token">
       <created>1659458053699</created>
@@ -218,7 +216,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659544847464</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Router">
+      <created>1659546809346</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1659546809346</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
