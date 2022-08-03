@@ -22,6 +22,15 @@ class UploadFileController extends Controller
         $response['File Size'] =  $file->getSize();
         $response['File Mime Type'] =  $file->getMimeType();
 
+        // Штатный режим
+        $filename = Storage::put('avatars/', $file);
+        $response['fileName'] =  $filename;
+
+        // Короткий режим
+        $path = $request->file('image')->store('public/users/');
+        $path = Storage::url($path);
+        $response['path'] =  $path;
+
         return $response;
 
 
