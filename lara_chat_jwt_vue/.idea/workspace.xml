@@ -4,20 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="495a7fc1-291e-4680-8d9f-4face7d8f5c3" name="Changes" comment="Upload Files">
-      <change afterPath="$PROJECT_DIR$/src/resources/js/components/auth/FormLogin.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/components/auth/FormRegister.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/store/api.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/store/auth.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/store/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/store/toast.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/resources/js/store/user.js" afterDir="false" />
+    <list default="true" id="495a7fc1-291e-4680-8d9f-4face7d8f5c3" name="Changes" comment="JWT + Store">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/src/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/resources/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/app.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/resources/js/components/Welcome.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/components/Welcome.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/src/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/components/auth/FormLogin.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/components/auth/FormLogin.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/store/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/store/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/store/auth.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/store/auth.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/resources/js/store/toast.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/resources/js/store/toast.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -204,7 +198,7 @@
       <updated>1659455985845</updated>
       <workItem from="1659455987145" duration="6999000" />
       <workItem from="1659542066800" duration="7673000" />
-      <workItem from="1659625770459" duration="3713000" />
+      <workItem from="1659625770459" duration="6760000" />
     </task>
     <task id="LOCAL-00001" summary="JWT Token">
       <created>1659458053699</created>
@@ -248,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1659549726404</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="JWT + Store">
+      <created>1659629666119</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1659629666119</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,7 +271,8 @@
     <MESSAGE value="JWT Token" />
     <MESSAGE value="Router" />
     <MESSAGE value="Upload Files" />
-    <option name="LAST_COMMIT_MESSAGE" value="Upload Files" />
+    <MESSAGE value="JWT + Store" />
+    <option name="LAST_COMMIT_MESSAGE" value="JWT + Store" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

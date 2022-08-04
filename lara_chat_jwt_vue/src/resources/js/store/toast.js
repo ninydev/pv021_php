@@ -1,5 +1,5 @@
 import { defineStore } from 'pinia'
-import createToaster from "@meforma/vue-toaster"
+import { createToaster } from "@meforma/vue-toaster"
 const toast = createToaster({
     /* options */
 })

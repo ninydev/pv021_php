@@ -4,7 +4,7 @@ import {useToastStore} from "./toast";
 const serverUrl = 'http://localhost:8000/api/'
 
 export const useApiStore = defineStore('api', {
-    getters: {
+    actions: {
         get(url, options = {}) {
             fetch(serverUrl + url)
                 .then(res=> {
@@ -18,7 +18,9 @@ export const useApiStore = defineStore('api', {
                     toast.error(err)
                 })
         },
-        post (url, data, options = {}){
+        post (url, data, then, options = {}){
+            console.log('Send post data')
+            console.log(data)
             options.method = 'POST'
             options.body = data
             fetch(serverUrl + url, options)
@@ -26,7 +28,7 @@ export const useApiStore = defineStore('api', {
                     return res.json()
                 })
                 .then(json => {
-                    return json
+                    then(json)
                 })
                 .catch(err => {
                     const toast = useToastStore()
