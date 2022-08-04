@@ -1,10 +1,13 @@
 <template>
 
-    <RouterView></RouterView>
 </template>
+
 <script>
 export default {
-    setup: () => ({
-    })
+    name: "FormRegister"
 }
 </script>
+
+<style scoped>
+
+</style>
