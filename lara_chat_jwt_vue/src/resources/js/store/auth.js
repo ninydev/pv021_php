@@ -1,9 +1,11 @@
 import { defineStore } from 'pinia'
 import {api} from "./api";
 import {useToastStore} from "./toast";
+import {useUserStore} from  "./user"
 
 export const useAuthStore = defineStore('auth', {
     state: () => ({
+        // expires_in: 3600
         jwt: localStorage.getItem('jwt') || null
     }),
     getters: {
@@ -22,9 +24,13 @@ export const useAuthStore = defineStore('auth', {
             api.post('auth/login', data)
                 .then(res=> {
                     console.log(res)
+                    this.rememberJwt(res.access_token)
+
                     const toast = useToastStore()
                     toast.success(res.user.name)
-                    this.rememberJwt(res.access_token)
+
+                    const userStore = useUserStore()
+                    userStore.updateUser(res.user)
                 })
         },
         rememberJwt(jwt) {

@@ -49,9 +49,10 @@ export const api = {
             // В любой запрос нужно добавить JWT
             // А тут перед запросом можно еще и проверить
             // Если он устарел - можно и обновить
+            options.headers = []
             const auth = useAuthStore()
             if (auth.jwt !== null)
-                options.headersAuthorization = 'bearer ' + auth.jwt
+                options.headers['Authorization'] = 'bearer ' + auth.jwt
 
             return new Promise((resolve, reject) => {
                 fetch(serverUrl + url, options)

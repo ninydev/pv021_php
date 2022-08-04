@@ -30,7 +30,7 @@ export default {
         const email = ref()
         const password = ref()
         const doLogin = function () {
-            console.log('Start Login: ' + email.value + ' ' + password.value)
+            // console.log('Start Login: ' + email.value + ' ' + password.value)
             store.tryLogin(email.value, password.value)
         }
 
