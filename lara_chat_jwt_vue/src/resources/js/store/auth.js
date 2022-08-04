@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
-import {useApiStore} from "./api";
+import {api} from "./api";
+import {useToastStore} from "./toast";
 
 export const useAuthStore = defineStore('auth', {
     state: () => ({
@@ -9,16 +10,22 @@ export const useAuthStore = defineStore('auth', {
     },
     actions: {
         tryLogin (email, password) {
-            const api = useApiStore()
+
             const data = new FormData()
             data.append('email', email);
             data.append('password', password);
-            api.post('auth/login', data, function (json) {
-                console.log('tryLogin res: ')
-                console.log(json)
-                // this.rememberJwt(json)
-            })
 
+            // const res = api.post('auth/login', data)
+            // console.log('tryLogin res: ')
+            // console.log(res)
+
+            api.post('auth/login', data)
+                .then(res=> {
+                    console.log(res)
+                    const toast = useToastStore()
+                    toast.success(res.user.name)
+                    this.rememberJwt(res.access_token)
+                })
         },
         rememberJwt(jwt) {
             this.jwt = jwt

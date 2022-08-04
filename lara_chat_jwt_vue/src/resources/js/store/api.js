@@ -1,13 +1,14 @@
-import { defineStore } from 'pinia'
+// import { defineStore } from 'pinia'
 import {useToastStore} from "./toast";
+import {useAuthStore} from "./auth";
 
 const serverUrl = 'http://localhost:8000/api/'
 
-export const useApiStore = defineStore('api', {
-    actions: {
+export const api = {
+
         get(url, options = {}) {
             fetch(serverUrl + url)
-                .then(res=> {
+                .then(res => {
                     return res.json()
                 })
                 .then(json => {
@@ -18,25 +19,52 @@ export const useApiStore = defineStore('api', {
                     toast.error(err)
                 })
         },
-        post (url, data, then, options = {}){
+
+        // post (url, data, options = {}){
+        //     console.log('Send post data')
+        //     console.log(data)
+        //     options.method = 'POST'
+        //     options.body = data
+        //     fetch(serverUrl + url, options)
+        //         .then(res=> {
+        //             return res.json()
+        //         })
+        //         .then(json => {
+        //             return json
+        //         })
+        //         .catch(err => {
+        //             const toast = useToastStore()
+        //             toast.error(err)
+        //         })
+        // }
+
+        async post (url, data, options = {}) {
+
             console.log('Send post data')
             console.log(data)
+
             options.method = 'POST'
             options.body = data
-            fetch(serverUrl + url, options)
-                .then(res=> {
-                    return res.json()
-                })
-                .then(json => {
-                    then(json)
-                })
-                .catch(err => {
-                    const toast = useToastStore()
-                    toast.error(err)
-                })
+
+            // В любой запрос нужно добавить JWT
+            // А тут перед запросом можно еще и проверить
+            // Если он устарел - можно и обновить
+            const auth = useAuthStore()
+            if (auth.jwt !== null)
+                options.headersAuthorization = 'bearer ' + auth.jwt
+
+            return new Promise((resolve, reject) => {
+                fetch(serverUrl + url, options)
+                    .then(res=> res.json())
+                    .then(json=> resolve(json))
+                    .catch(err=> {
+                        const toast = useToastStore()
+                        toast.error(err)
+                        reject(err)
+                    })
+            })
         }
-    }
-})
+}
 
 
 /*
