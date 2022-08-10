@@ -22,6 +22,12 @@ use App\Http\Controllers\AuthController;
 
 Route::post('/file', [\App\Http\Controllers\UploadFileController::class, 'showUploadFile']);
 
+Route::get('/users', function (Request $request) {
+    $per_page = $request->input('per_page', 1); // Сколько на страницу
+    $page = $request->input('page', 1); // Какая страница
+
+    return \App\Models\User::paginate($per_page);
+});
 
 Route::group([
     'middleware' => 'api',

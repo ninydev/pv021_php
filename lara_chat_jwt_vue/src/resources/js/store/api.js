@@ -2,22 +2,35 @@
 import {useToastStore} from "./toast";
 import {useAuthStore} from "./auth";
 
-const serverUrl = 'http://localhost:8000/api/'
+const serverUrl = 'http://localhost:8000/api'
 
 export const api = {
 
         get(url, options = {}) {
-            fetch(serverUrl + url)
-                .then(res => {
-                    return res.json()
-                })
-                .then(json => {
-                    return json
-                })
-                .catch(err => {
-                    const toast = useToastStore()
-                    toast.error(err)
-                })
+
+            // В любой запрос нужно добавить JWT
+            // А тут перед запросом можно еще и проверить
+            // Если он устарел - можно и обновить
+            options.headers = []
+            const auth = useAuthStore()
+            if (auth.jwt !== null)
+                options.headers['Authorization'] = 'bearer ' + auth.jwt
+
+            return new Promise((resolve, reject) => {
+
+                fetch(serverUrl + url)
+                    .then(res => {
+                        return res.json()
+                    })
+                    .then(json => {
+                        resolve( json)
+                    })
+                    .catch(err => {
+                        const toast = useToastStore()
+                        toast.error(err)
+                        reject(err)
+                    })
+            })
         },
 
         // post (url, data, options = {}){

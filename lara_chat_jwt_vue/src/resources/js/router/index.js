@@ -7,6 +7,11 @@ const routes = [
         component: () => import( /*webpackChunkName: "Home" */ './../pages/PageHome.vue')
     },
     {
+        path: '/blog',
+        name: 'Blog',
+        component: () => import( /*webpackChunkName: "Blog" */ './../pages/PageBlog.vue')
+    },
+    {
         path: '/:pathMatch(.*)*',
         name: 'Error404',
         component: () => import( /*webpackChunkName: "Error404" */ './../pages/PageError404.vue')

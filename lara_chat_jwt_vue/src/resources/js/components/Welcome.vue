@@ -1,6 +1,5 @@
 <template>
-
-    <FormLogin></FormLogin>
+    
     <RouterView></RouterView>
 </template>
 <script>
